@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
 	<title>David Castro • Software Engineer </title>
-   <meta name="description" content="I am a Software Engineer with a master's degree in Software Development. I currently work as Backend Developer using Python & Django. ">
+	<meta name="description" content="I am a Software Engineer with a master's degree in Software Development. I currently work as Backend Developer using Python & Django">
 	<meta name="author" content="@davidcasr">
-   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 
-   <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale" content="es_ES" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="David Castro • @davidcasr • | Software Engineer" />
 	<meta property="og:description" content="I am a Software Engineer with a master's degree in Software Development. I currently work as Backend Developer using Python & Django" />
@@ -20,610 +18,605 @@
 	<meta property="og:site_name" content="David Castro • @davidcasr • | Software Engineer" />
 	<meta property="og:image" content="images/apple-icon-180x180.png" />
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
+    <!-- mobile specific metas
     ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
 
-   <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
-   <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
-   <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
-   <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
-   <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
-   <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
-   <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
-   <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
-   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
-   <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-   <link rel="manifest" href="images/manifest.json">
-   <meta name="msapplication-TileColor" content="#ffffff">
-   <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
-   <meta name="theme-color" content="#ffffff">
+    <!-- script
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
-<body>
+<body id="top" class="ss-preload">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">INICIO</a></li>
+                    <li><a class="smoothscroll" href="#resume">CV</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">TRABAJOS</a></li>
+                    <li><a class="smoothscroll" href="#contact">HOLA!</a></li>
+                    <li><a style="color:#7a7a7a" href="../">EN</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end row -->
+        
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>Soy David Castro</h1>
+
+                    <h3>Soy <span>🚀 Ingeniero de Software</span> con maestría en Desarrollo de Software.
+                        Actualmente trabajo como <span>🖥️ Desarrollador Backend </span> usando 🐍 Python & Django.
+                        Mi pasión es la creatividad con <code class="token property">código</code>, donde transformo ideas en soluciones sorprendentes. 
+                        ¡Vamos a explorar juntos este viaje digital!</h3>
+
+                    <div class="s-hero__content-social">
+                        <a href="https://github.com/davidcasr"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="https://davidcasr.medium.com/"><i class="fab fa-medium-m" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/davidcasr/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="https://open.spotify.com/user/davidcas"><i class="fab fa-spotify" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/davidcasr"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/davidcasr/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="mailto:me@davidcasr.co"><i class="far fa-envelope" aria-hidden="true"></i></a>
+                    </div>
+
+                </div> <!-- end s-hero__content-about -->
+
+            </div>
+        </div> <!-- s-hero__content -->
+
+    </section> <!-- end s-hero -->
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+        
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Educación</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Maestría en Gestión, Aplicación y Desarrollo de Software</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Universidad Autónoma de Bucaramanga</span> 
+                            <span class="resume-block__header-date">
+                                2015
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Reconocimiento: Distinción meritoria
+                        | Prototipo software de un sistema de posicionamiento en interiores para dispositivos móviles
+                        | Tecnologías de desarrollo: Android, SQLite, IndoorAtlas, libGDX, Tiled Map Editor
+                     </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Ingeniero de Sistemas</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Universidad Industrial de Santander</span> 
+                            <span class="resume-block__header-date">
+                                2012
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Evaluación de la transmisión de datos respecto a la norma IEC 61850 en una red de datos local y de su desempeño ante ataques a su seguridad
+                        | Tecnologías de desarrollo: Python, Scapy, Wireshark, Ostinato, Backtrack, Ubuntu
+                     </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Trabajos</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Ingeniero Backend Senior</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Ingeodata</span> 
+                            <span class="resume-block__header-date">
+                                Junio 2023 - Actualmente
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Optimizar la gestión de proyectos software al organizar el repositorio de código, estandarizar su uso y establecer una guía para la documentación. Esto resultó en una mayor visibilidad del progreso del producto y una colaboración más eficiente entre el equipo de desarrollo y de ingeniería
+                        | Desarrollo de una librería que incorpora cálculos y gráficos esenciales para el análisis de geomecánica y la optimización, junto con un entorno de análisis de datos y una API escalable. Estas soluciones permiten a los ingenieros trabajar de manera eficiente con los datos, mejorando la toma de decisiones y la entrega de análisis críticos en proyectos en curso
+                        | Tecnologías de desarrollo: Python, Django, Django Rest Framework, PostgreSQL, GitHub, Docker
+                     </p>   
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Desarrollador & Consultor</h4>
+                        <p class="resume-block__header-meta">
+                            <span>David Castro • Software Engineer</span> 
+                            <span class="resume-block__header-date">
+                                Enero 2013 - Presente
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Consultoría en desarrollo de software, arquitectura y metodologías ágiles a la empresa Ingeodata SAS, compañía que ofrece servicios y soluciones de ingeniería para el sector Oil & Gas
+                        | Tecnologías de desarrollo: Python, Django
+                     </p>
+                     <p>
+                        Curso de Introducción a CommCare para Investigadores, dictado a docentes de la Facultad de Enfermería de la Universidad Cooperativa de Colombia (Bucaramanga) en mayo del año 2022
+                        | Tecnologías de desarrollo: Python, Lektor
+                     </p>
+                     <p>
+                        Diseño del portal web de Dorian Salud para ti, una iniciativa que ofrece servicios de: Medicina Funcional, Descodificación Biológica y Medicina Integrativa 
+                        | Tecnologías de desarrollo: Wordpress
+                     </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Ingeniero Backend</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Uber</span> 
+                            <span class="resume-block__header-date">
+                                Junio 2022 - Mayo 2023
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Disminución de un 35% en el tiempo de carga de un servicio del área de Promociones (Cornershop by Uber)
+                        | Desarrollo backend de nuevos servicios que facilitan la gestión de cuentas de grandes marcas en el área de Brands (Cornershop by Uber)
+                        | Tecnologías de desarrollo: Python, Django, Django Rest Framework, PostgreSQL, Redis, GitHub, New Relic, Datadog, Sentry 
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Ingeniero Backend</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Cornershop by Uber</span> 
+                            <span class="resume-block__header-date">
+                                Julio 2021 - Mayo 2023
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Autor en el blog de tecnología
+                        | Desarrollo backend de un nuevo mecanismo que permite a clientes internos gestionar productos que se muestran en la aplicación BrandCenter
+                        | Diseño del API de integración entre clientes externos y el área de Brands
+                        | Tecnologías de desarrollo: Python, Django, Django Rest Framework, PostgreSQL, Redis, GitHub, New Relic, Datadog, Sentry 
+                     </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Backend Developer</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Departamento Administrativo Nacional de Estadística DANE</span> 
+                            <span class="resume-block__header-date">
+                                Julio 2020 - Mayo 2021
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Diseño de la arquitectura e implementación del Backend del Sistema de Gestión de la Estratificación y las Coberturas de Servicios Públicos Domiciliarios (SIGESCO)
+                        | Liderazgo en las actividades de desarrollo de software: Diseño y desarrollo de ambientes de desarrollo y producción, aplicación de buenas prácticas y gestión de repositorios de código fuente
+                        | Tecnologías de desarrollo: Python, Django, Django Rest Framework, PostgreSQL, Docker
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Ingeniero de Desarrollo</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Fundación Cardiovascular de Colombia</span> 
+                            <span class="resume-block__header-date">
+                                Noviembre 2016 - Febrero 2020
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Líder de desarrollo en el área de Investigaciones, Desarrollo e Innovación de la institución
+                        | Desarrollador backend, frontend y móvil para los proyectos ejecutados en el área
+                        | Analista de información para la toma de decisiones en la institución y en proyectos de investigación (ETL y minería de datos)
+                        | Asesoría de ingeniería en más de 10 proyectos de investigación en temáticas relacionadas con salud (Medicina, Enfermería y Psicología)
+                        | Redacción de artículos de ingeniería para revistas científicas orientadas a salud e ingeniería
+                        | Ponente en eventos científicos nacionales de salud
+                        | Tecnologías de desarrollo: Laravel, Bootstrap, Android (Java), MySQL, SQL Server, Wordpress, HTML, CSS, Javascript, GitLab
+                    </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Publicaciones</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <p>
+                        Diseño de una aplicación móvil para la monitorización domiciliaria de bebés con cardiopatías congénitas complejas
+                        <span class="info"> · Revista Cuidarte · 7 oct. 2022  </span>
+                        <a href="https://revistas.udes.edu.co/cuidarte/article/view/2335/2645">Más</a>
+                     </p>
+                     <p>
+                        Síntomas depresivos y obesidad en adolescentes. Una aplicación desde la Minería de Datos
+                        <span class="info"> · Informes Psicológicos · 26 ago. 2020  </span>
+                        <a href="https://revistas.upb.edu.co/index.php/informespsicologicos/article/view/7634/6829">Más</a>
+                     </p>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+    </section> <!-- end s-resume -->
+
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h4>Un Poco De Mis Últimas Creaciones</h4>
+            </div>
+        </div>
+
+        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+
+            <div class="column folio-item">
+                <a href="#modal-01" class="folio-item__thumb">
+                    <img src="images/portfolio/oil-and-gas.png" alt="Streamlit for Oil and Gas">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img src="images/portfolio/course.png" alt="Course CommCare">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-03" class="folio-item__thumb">
+                    <img src="images/portfolio/dorian.png" alt="Dorian Salud para ti">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-04" class="folio-item__thumb">
+                    <img src="images/portfolio/velox.png" alt="Velox Psicología">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-05" class="folio-item__thumb">
+                    <img src="images/portfolio/suricatapp.jpg" alt="Suricatapp">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-06" class="folio-item__thumb">
+                    <img src="images/portfolio/cepario.jpg" alt="Cepario LMMA-UIS">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-07" class="folio-item__thumb">
+                    <img src="images/portfolio/promesa.jpg" alt="Promesa">
+                </a>
+            </div> <!-- end folio-item -->
+
+        </div> <!-- end folio-list -->
+
+
+        <!-- Modal Templates Popup
+        =========================================================== -->
+        <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/m-oil-and-gas.png" alt="Streamlit for Oil and Gas" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Streamlit para Oil and Gas</h5>
+                    <p>La aplicación simplifica la exploración y visualización de datos de registros de pozos. Los usuarios pueden cargar archivos LAS para acceder instantáneamente a información detallada del pozo, incluyendo datos del encabezado y detalles geoespaciales</p>
+                    <ul class="modal-popup__cat">
+                        <li>Desarrollo</li>
+                        <li>Python, Streamlit, Welly</li>
+                    </ul>
+                </div>
+    
+                <a href="https://explore-oil-and-gas.streamlit.app/" class="modal-popup__details">Link del proyecto</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-02" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/m-course.png" alt="Course of CommCare" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Curso de Introducción a CommCare para Investigadores</h5>
+                    <p>Curso dictado a docentes de la Facultad de Enfermería de la Universidad Cooperativa de Colombia (Bucaramanga) en mayo del año 2022</p>
+                    <ul class="modal-popup__cat">
+                        <li>Profesor, Diseño web</li>
+                        <li>Python, Lektor</li>
+                    </ul>
+                </div>
+    
+                <a href="http://davidcasr.co/course-commcare/" class="modal-popup__details">Link del proyecto</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-03" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/m-dorian.png" alt="Dorian Salud para ti" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Dorian Salud para ti</h5>
+                    <p>Dorian Salud para ti, es un espacio de acompañamiento médico basado en el Ser. Servicios: Medicina Funcional, Descodificación Biológica, Medicina Integrativa</p>
+                    <ul class="modal-popup__cat">
+                        <li>Diseño web, SEO, Automatización</li>
+                        <li>Wordpress, Zapier</li>
+                    </ul>
+                </div>
+    
+                <a href="http://www.doriansaludparati.com/" class="modal-popup__details">Link del proyecto</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-04" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/m-velox.png" alt="Velox Psicología" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Velox Psicología</h5>
+                    <p>Velox Psicología es una empresa de Bucaramanga, Colombia, liderada por profesionales de la salud mental, que utilizan recursos tecnológicos para promover el bienestar emocional y la calidad de vida.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Diseño web, SEO</li>
+                        <li>Wordpress</li>
+                    </ul>
+                </div>
+    
+                <a href="http://www.veloxpsicologia.com/" class="modal-popup__details">Link del proyecto</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-05" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/m-suricatapp.jpg" alt="Suricatapp" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Suricatapp</h5>
+                    <p>Suricatapp es la forma más efectiva de administrar y monitorear los procesos de su comunidad: iglesias, equipos deportivos y más</p>
+                    <ul class="modal-popup__cat">
+                        <li>Marca, Deasarrollo</li>
+                        <li>Laravel, Bootstrap, MySQL, Nginx, CentOS, Git</li>
+                    </ul>
+                </div>
+    
+                <a href="https://github.com/davidcasr/suricatapp" class="modal-popup__details">Link del proyecto</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-06" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/m-cepario.jpg" alt="Cepario LMMA-UIS" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Cepario LMMA-UIS</h5>
+                    <p>Cepario del Laboratorio de Microbiología y Mutagénesis Ambiental de la Universidad Industrial de Santander</p>
+                    <ul class="modal-popup__cat">
+                        <li>Desarrollo Backend, Desarrollo Frontend</li>
+                        <li>Laravel, Bootstrap, MySQL, Nginx, CentOS, Git</li>
+                    </ul>
+                </div>
+    
+                <a href="http://cepariolmma.uis.edu.co" class="modal-popup__details">Link del proyecto</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-07" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/m-promesa.jpg" alt="Promesa" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Promesa</h5>
+                    <p>Programa de seguimiento domiciliario de niños con cardiopatías congénitas complejas</p>
+                    <ul class="modal-popup__cat">
+                        <li>Desarrollo Backend, Desarrollo móvil, Diseño web, Redes sociales</li>
+                        <li>Laravel, Bootstrap, Android (Java), MySQL, Wordpress, Javascript</li>
+                    </ul>
+                </div>
+    
+                <a href="https://play.google.com/store/apps/details?id=org.fcv.promesa" class="modal-popup__details">Link del proyecto</a>
+            </div>
+        </div> <!-- end modal -->
+
+
+    </section> <!-- end s-portfolio -->
+
+
+    <!-- CTA
+    ================================================== -->
+    <section class="s-cta">
+
+        <div class="row">
+            <div class="column">
+                <h3 class="h2 section-desc">
+                    ⚡ ¿Te gustaría llevar tu experiencia en desarrollo de software al siguiente nivel?
+                </h3>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="row cta-content">
+            <div class="column">
+                <p>
+                    Ofrezco servicios especializados que incluyen <span>desarrollo backend</span>, donde transformo ideas en soluciones sólidas y eficientes, <span>consultoría en desarrollo de software</span> para optimizar tus proyectos y <span>coaching personalizado</span> para impulsar tu crecimiento profesional.
+                </p>
+
+                <a href="mailto:me@davidcasr.co" class="btn btn--primary h-full-width">Contáctame</a>
+            </div>
+        </div> <!-- end cta-content -->
+
+    </section> <!-- end s-cta -->
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row s-contact__header">
+            <div class="column large-12">
+                <h3 class="section-header-allcaps">Hola!</h3>
+            </div>
+        </div>
+
+        <div class="row s-contact__content">
+
+            <div class="column large-7 medium-12">
+
+                <h4 class="huge-text">
+                    ¿Tienes un nuevo proyecto en mente? Colaboremos y construyamos algo increíble. Transformemos esa idea en un producto aún mejor 🙂
+                </h4>
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
-
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Mostrar navegación</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Ocultar navegación</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Inicio</a></li>
-	         <li><a class="smoothscroll" href="#resume">Currículum</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Trabajos</a></li>
-            <li><a style="color:#7a7a7a" href="../">EN</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">Soy David Castro</h1>
-            <h3>Soy <span>🚀 Ingeniero de Software</span> con maestría en Desarrollo de Software.
-            Actualmente trabajo como <span>🖥️ Desarrollador Backend </span> usando 🐍 Python & Django.
-            He desarrollado aplicaciones nativas con Android y actualmente escribo en
-            <a href="https://davidcasr.medium.com/">Medium</a> sobre mi experiencia con algunas tecnologías.</h3>
-            <hr />
-            <ul class="social">
-               <li><a href="https://github.com/davidcasr"><i class="fab fa-github"></i></a></li>
-               <li><a href="https://davidcasr.medium.com/"><i class="fab fa-medium-m"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/davidcasr/"><i class="fab fa-linkedin-in"></i></a></li>
-               <li><a href="https://open.spotify.com/user/davidcasr"><i class="fab fa-spotify"></i></a></li>
-               <li><a href="https://twitter.com/davidcasr"><i class="fab fa-twitter"></i></a></li>
-               <li><a href="https://www.instagram.com/davidcasr/"><i class="fab fa-instagram"></i></a></li>
-               <li><a href="mailto:me@davidcasr.co"><i class="far fa-envelope"></i></a></li>
-            </ul>
-         </div>
-      </div>
-
-   </header> <!-- Header End -->
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Educación</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Maestría en Gestión, Aplicación y Desarrollo de Software</h3>
-                  <p class="info"><span>&bull;</span>Universidad Autónoma de Bucaramanga<span>&bull;</span> <em class="date">2015</em></p>
-
-                  <p>
-                     Reconocimiento: Distinción meritoria
-                     | Prototipo software de un sistema de posicionamiento en interiores para dispositivos móviles
-                     | Tecnologías de desarrollo: Android, SQLite, IndoorAtlas, libGDX, Tiled Map Editor
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Ingeniero de Sistemas</h3>
-                  <p class="info"><span>&bull;</span>Universidad Industrial de Santander<span>&bull;</span> <em class="date">2012</em></p>
-
-                  <p>
-                     Evaluación de la transmisión de datos respecto a la norma IEC 61850 en una red de datos local y de su desempeño ante ataques a su seguridad
-                     | Tecnologías de desarrollo: Python, Scapy, Wireshark, Ostinato, Backtrack, Ubuntu
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Trabajos</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-            
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Ingeniero Backend Senior</h3>
-                  <p class="info"><span>&bull;</span>Ingeodata<span>&bull;</span> <em class="date">Junio 2023 - Actualmente</em></p>
-
-                  <p>
-                     Optimizar la gestión de proyectos software al organizar el repositorio de código, estandarizar su uso y establecer una guía para la documentación. Esto resultó en una mayor visibilidad del progreso del producto y una colaboración más eficiente entre el equipo de desarrollo y de ingeniería
-                     | Desarrollo de una librería que incorpora cálculos y gráficos esenciales para el análisis de geomecánica y la optimización, junto con un entorno de análisis de datos y una API escalable. Estas soluciones permiten a los ingenieros trabajar de manera eficiente con los datos, mejorando la toma de decisiones y la entrega de análisis críticos en proyectos en curso
-                     | Tecnologías de desarrollo: Python, Django, Django Rest Framework, PostgreSQL, GitHub, Docker
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Desarrollador & Consultor</h3>
-                  <p class="info"><span>&bull;</span>David Castro | Software Engineer <span>&bull;</span> <em class="date">Enero 2013 - Presente</em></p>
-                  <p>
-                     Consultoría en desarrollo de software, arquitectura y metodologías ágiles a la empresa Ingeodata SAS, compañía que ofrece servicios y soluciones de ingeniería para el sector Oil & Gas
-                     | Tecnologías de desarrollo: Python, Django
-                  </p>
-                  <p>
-                     Curso de Introducción a CommCare para Investigadores, dictado a docentes de la Facultad de Enfermería de la Universidad Cooperativa de Colombia (Bucaramanga) en mayo del año 2022
-                     | Tecnologías de desarrollo: Python, Lektor
-                  </p>
-                  <p>
-                     Diseño del portal web de Dorian Salud para ti, una iniciativa que ofrece servicios de: Medicina Funcional, Descodificación Biológica y Medicina Integrativa 
-                     | Tecnologías de desarrollo: Wordpress
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Ingeniero Backend</h3>
-                  <p class="info"><span>&bull;</span>Uber<span>&bull;</span> <em class="date">Junio 2022 - Mayo 2023</em></p>
-
-                  <p>
-                     Disminución de un 35% en el tiempo de carga de un servicio del área de Promociones (Cornershop by Uber)
-                     | Desarrollo backend de nuevos servicios que facilitan la gestión de cuentas de grandes marcas en el área de Brands (Cornershop by Uber)
-                     | Tecnologías de desarrollo: Python, Django, Django Rest Framework, PostgreSQL, Redis, GitHub, New Relic, Datadog, Sentry 
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Ingeniero Backend</h3>
-                  <p class="info"><span>&bull;</span>Cornershop by Uber<span>&bull;</span> <em class="date">Julio 2021 - Mayo 2023</em></p>
-
-                  <p>
-                     Autor en el blog de tecnología <a href=" https://tech.cornershop.io">https://tech.cornershop.io</a>
-                     | Desarrollo backend de un nuevo mecanismo que permite a clientes internos gestionar productos que se muestran en la aplicación BrandCenter
-                     | Diseño del API de integración entre clientes externos y el área de Brands
-                     | Tecnologías de desarrollo: Python, Django, Django Rest Framework, PostgreSQL, Redis, GitHub, New Relic, Datadog, Sentry 
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Desarrollador Backend</h3>
-                  <p class="info"><span>&bull;</span>Departamento Administrativo Nacional de Estadística DANE<span>&bull;</span> <em class="date">Julio 2020 - Mayo 2021</em></p>
-
-                  <p>
-                     Diseño de la arquitectura e implementación del Backend del Sistema de Gestión de la Estratificación y las Coberturas de Servicios Públicos Domiciliarios (SIGESCO)
-                     | Liderazgo en las actividades de desarrollo de software: Diseño y desarrollo de ambientes de desarrollo y producción, aplicación de buenas prácticas y gestión de repositorios de código fuente
-                     | Tecnologías de desarrollo: Python, Django, Django Rest Framework, PostgreSQL, Docker
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Ingeniero de Desarrollo</h3>
-                  <p class="info"><span>&bull;</span>Fundación Cardiovascular de Colombia <span>&bull;</span> <em class="date">Noviembre 2016 - Febrero 2020</em></p>
-
-                  <p>
-                     Líder de desarrollo en el área de Investigaciones, Desarrollo e Innovación de la institución
-                     | Desarrollador backend, frontend y móvil para los proyectos ejecutados en el área
-                     | Analista de información para la toma de decisiones en la institución y en proyectos de investigación (ETL y minería de datos)
-                     | Asesoría de ingeniería en más de 10 proyectos de investigación en temáticas relacionadas con salud (Medicina, Enfermería y Psicología)
-                     | Redacción de artículos de ingeniería para revistas científicas orientadas a salud e ingeniería
-                     | Ponente en eventos científicos nacionales de salud
-                     | Tecnologías de desarrollo: Laravel, Bootstrap, Android (Java), MySQL, SQL Server, Wordpress, HTML, CSS, Javascript, GitLab
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-      <!-- Publications
-      ----------------------------------------------- -->
-      
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Publicaciones</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <p>
-               Diseño de una aplicación móvil para la monitorización domiciliaria de bebés con cardiopatías congénitas complejas
-               <span class="info"> · Revista Cuidarte · 7 oct. 2022  </span>
-               <a href="https://revistas.udes.edu.co/cuidarte/article/view/2335/2645">Más</a>
-            </p>
-            <p>
-               Síntomas depresivos y obesidad en adolescentes. Una aplicación desde la Minería de Datos
-               <span class="info"> · Informes Psicológicos · 26 ago. 2020  </span>
-               <a href="https://revistas.upb.edu.co/index.php/informespsicologicos/article/view/7634/6829">Más</a>
-            </p>
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End Publications -->
-
-
-   </section> <!-- Resume Section End-->
-
-
-   <!-- Portfolio Section
-   ================================================== -->
-   <section id="portfolio">
-
-      <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <h1>Mira algunos de mis trabajos</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-               
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-07" title="">
-                        <img alt="Streamlir for Oil and Gas" src="images/portfolio/oil-and-gas.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Streamlit para Oil and Gas</h5>
-                              <p>Desarrollo</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-   
-                     <a href="#modal-06" title="">
-                        <img alt="Course CommCare" src="images/portfolio/course.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                               <h5>Curso de Introducción a CommCare para Investigadores</h5>
-                              <p>Profesor & Diseño web</p>
-                            </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-   
-                  </div>
-                </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-05" title="">
-                        <img alt="Dorian Salud para ti" src="images/portfolio/dorian.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Dorian Salud para ti</h5>
-                              <p>Diseño web</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="Velox Psicología" src="images/portfolio/velox.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Velox Psicología</h5>
-                              <p>Diseño web</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="Suricatapp" src="images/portfolio/suricatapp.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Suricatapp</h5>
-                              <p>Desarrollo</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="Cepario LMMA-UIS" src="images/portfolio/cepario.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Cepario LMMA-UIS</h5>
-                              <p>Desarrollo</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="Promesa" src="images/portfolio/promesa.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Promesa</h5>
-                              <p>Desarrollo</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-            </div> <!-- portfolio-wrapper end -->
-
-         </div> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup
-	      --------------------------------------------------------------- -->
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-velox.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>Velox Psicología</h4>
-			      <p>Velox Psicología es una empresa de Bucaramanga, Colombia, liderada por profesionales de la salud mental, que utilizan recursos tecnológicos para promover el bienestar emocional y la calidad de vida.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Diseño web, SEO</span>
-               <span class="categories"><i class="fas fa-desktop"></i>Wordpress</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.veloxpsicologia.com/" target="_blank">Más</a>
-		         <a class="popup-modal-dismiss">Cerrar</a>
             </div>
 
-	      </div><!-- modal-01 End -->
+            <div class="column large-4 medium-12">
 
-         <div id="modal-02" class="popup-modal mfp-hide">
+                <div class="row contact-infos">
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Email
+                            </h5>
+                            <p class="contact-block__content">
+                                <a class="mailtoui" href="mailto:me@davidcasr.co">me@davidcasr.co</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-suricatapp.jpg" alt="Suricatapp" />
+                    <div class="column large-12">
+                        <a href="mailto:me@davidcasr.co" class="mailtoui btn btn--primary h-full-width">Hablemos</a>
+                    </div>
+                </div> <!-- end contact-infos -->
 
-		      <div class="description-box">
-			      <h4>Suricatapp</h4>
-			      <p>Suricatapp es la forma más efectiva de administrar y monitorear los procesos de su comunidad: iglesias, equipos deportivos y más</p>
-               <span class="categories"><i class="fa fa-tag"></i>Marca, Desarrollo web</span>
-               <span class="categories"><i class="fas fa-desktop"></i>Laravel, Bootstrap, MySQL, Nginx, CentOS, Git</span>
-		      </div>
+            </div>
+        </div> <!-- s-contact__content -->
 
-            <div class="link-box">
-               <a href="https://github.com/davidcasr/suricatapp" target="_blank">Más</a>
-		         <a class="popup-modal-dismiss">Cerrar</a>
+    </section> <!-- end s-contact -->
+    
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a href="https://github.com/davidcasr"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://davidcasr.medium.com/"><i class="fab fa-medium-m"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/davidcasr/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://open.spotify.com/user/davidcasr"><i class="fab fa-spotify"></i></a></li>
+                    <li><a href="https://twitter.com/davidcasr"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/davidcasr/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="mailto:me@davidcasr.co"><i class="far fa-envelope"></i></a></li>
+                </ul>
             </div>
 
-	      </div><!-- modal-02 End -->
-
-         <div id="modal-03" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-cepario.jpg" alt="Cepario" />
-
-		      <div class="description-box">
-			      <h4>Cepario LMMA-UIS</h4>
-			      <p>Cepario del Laboratorio de Microbiología y Mutagénesis Ambiental de la Universidad Industrial de Santander</p>
-               <span class="categories"><i class="fa fa-tag"></i>Desarrollo Backend, Desarrollo Frontend </span>
-               <span class="categories"><i class="fas fa-desktop"></i>Laravel, Bootstrap, MySQL, Nginx, CentOS, Git</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://cepariolmma.uis.edu.co/" target="_blank">Más</a>
-		         <a class="popup-modal-dismiss">Cerrar</a>
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>Diseñado por <a href="https://www.styleshout.com/">StyleShout</a></span>
+                <span>Hecho con ❤️ por @davidcasr</span>
             </div>
+        </div>
 
-	      </div><!-- modal-03 End -->
-
-         <div id="modal-04" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-promesa.jpg" alt="Promesa" />
-
-		      <div class="description-box">
-			      <h4>Promesa</h4>
-			      <p>Programa de seguimiento domiciliario de niños con cardiopatías congénitas complejas</p>
-               <span class="categories"><i class="fa fa-tag"></i>Desarrollo Backend, <a href="https://play.google.com/store/apps/details?id=org.fcv.promesa">Desarrollo móvil</a>, Diseño web, Redes sociales</span>
-               <span class="categories"><i class="fas fa-desktop"></i>Laravel, Bootstrap, Android (Java), MySQL, Wordpress, Javascript</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.promesaencasa.com/" target="_blank">Más</a>
-		         <a class="popup-modal-dismiss">Cerrar</a>
-            </div>
-
-	      </div><!-- modal-04 End -->
-
-         <div id="modal-05" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-dorian.png" alt="Dorian Salud para ti" />
-
-		      <div class="description-box">
-			      <h4>Dorian Salud para ti</h4>
-			      <p>Dorian Salud para ti, es un espacio de acompañamiento médico basado en el Ser. Servicios: Medicina Funcional, Descodificación Biológica, Medicina Integrativa</p>
-               <span class="categories"><i class="fa fa-tag"></i>Diseño web, SEO, Automatización</span>
-               <span class="categories"><i class="fas fa-desktop"></i>Wordpress, Zapier</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.doriansaludparati.com/" target="_blank">Más</a>
-		         <a class="popup-modal-dismiss">Cerrar</a>
-            </div>
-
-	      </div><!-- modal-05 End -->
-
-         <div id="modal-06" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-course.png" alt="Course of CommCare" />
-
-		      <div class="description-box">
-			      <h4>Curso de Introducción a CommCare para Investigadores</h4>
-			      <p>Curso dictado a docentes de la Facultad de Enfermería de la Universidad Cooperativa de Colombia (Bucaramanga) en mayo del año 2022</p>
-               <span class="categories"><i class="fa fa-tag"></i>Profesor, Diseño web</span>
-               <span class="categories"><i class="fas fa-desktop"></i>Python, Lektor</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://davidcasr.co/course-commcare/" target="_blank">Más</a>
-		         <a class="popup-modal-dismiss">Cerrar</a>
-            </div>
-
-	      </div><!-- modal-06 End -->
-         
-         <div id="modal-07" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-oil-and-gas.png" alt="Streamlit for Oil and Gas" />
-
-		      <div class="description-box">
-			      <h4>Streamlit para Oil and Gas</h4>
-			      <p>La aplicación simplifica la exploración y visualización de datos de registros de pozos. Los usuarios pueden cargar archivos LAS para acceder instantáneamente a información detallada del pozo, incluyendo datos del encabezado y detalles geoespaciales</p>
-               <span class="categories"><i class="fa fa-tag"></i>Desarrollo</span>
-               <span class="categories"><i class="fas fa-desktop"></i>Python, Streamlit, Welly</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="https://explore-oil-and-gas.streamlit.app/" target="_blank">Mas</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-07 End -->
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+             </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
 
 
-      </div> <!-- row End -->
-
-   </section> <!-- Portfolio Section End-->
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li><a href="https://github.com/davidcasr"><i class="fab fa-github"></i></a></li>
-               <li><a href="https://davidcasr.medium.com/"><i class="fab fa-medium-m"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/davidcasr/"><i class="fab fa-linkedin-in"></i></a></li>
-               <li><a href="https://open.spotify.com/user/davidcasr"><i class="fab fa-spotify"></i></a></li>
-               <li><a href="https://twitter.com/davidcasr"><i class="fab fa-twitter"></i></a></li>
-               <li><a href="https://www.instagram.com/davidcasr/"><i class="fab fa-instagram"></i></a></li>
-               <li><a href="mailto:me@davidcasr.co"><i class="far fa-envelope"></i></a></li>
-            </ul>
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2023</li>
-               <li><a href="mailto:me@davidcasr.co">me@davidcasr.co</a></li>
-               <li>Hecho con ❤️ por @davidcasr</li>
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="fas fa-chevron-up"></i></a></div>
-
-      </div>
-
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
