@@ -9,8 +9,8 @@
   --orange-dim:   rgba(232,78,15,0.10);
   --orange-bd:    rgba(232,78,15,0.22);
   --white:        #EDEBE7;
-  --white-dim:    rgba(237,235,231,0.52);
-  --white-faint:  rgba(237,235,231,0.18);
+  --white-dim:    rgba(237,235,231,0.72);
+  --white-faint:  rgba(237,235,231,0.40);
   --ff:           'Syne', sans-serif;
   --mono:         'JetBrains Mono', monospace;
 }
