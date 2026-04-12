@@ -51,9 +51,8 @@ nav.visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 18px 48px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .nav-logo {
@@ -624,7 +623,7 @@ footer .container {
 }
 @media (max-width: 768px) {
   .container { padding: 0 20px; }
-  .nav-inner { padding: 14px 20px; }
+  .nav-inner { padding-top: 14px; padding-bottom: 14px; }
   .nav-right { gap: 10px; }
   .nav-social-icons { display: none; }
   .nav-hamburger { display: flex; }
