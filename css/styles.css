@@ -342,14 +342,14 @@ nav.visible {
 }
 
 /* ─── EDUCATION ─── */
-.education { background: var(--black-2); }
+.education { background: var(--black); }
 .edu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1px; background: var(--black-4);
+  gap: 1px;
 }
 .edu-card {
-  background: var(--black-2); padding: 36px 32px;
+  background: var(--black); padding: 36px 32px;
   position: relative; overflow: hidden;
   transition: background 0.25s;
 }
@@ -359,7 +359,7 @@ nav.visible {
   background: var(--orange); transform: scaleX(0);
   transform-origin: left; transition: transform 0.3s;
 }
-.edu-card:hover { background: var(--black-3); }
+.edu-card:hover { background: var(--black-2); }
 .edu-card:hover::after { transform: scaleX(1); }
 
 .edu-year {
@@ -391,7 +391,7 @@ nav.visible {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-  gap: 1px; background: var(--black-4);
+  gap: 1px;
 }
 .proj-card {
   background: var(--black-3); padding: 36px 30px;
