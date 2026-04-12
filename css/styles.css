@@ -225,7 +225,7 @@ nav.visible {
 
 .hero-tagline {
   font-size: clamp(17px, 2vw, 22px);
-  line-height: 1.6; color: var(--white-dim);
+  line-height: 1.6; color: var(--white);
   font-weight: 400; max-width: 540px;
   margin-bottom: 52px;
   animation: fadeUp 0.6s ease 0.26s both;
