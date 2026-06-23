@@ -136,6 +136,16 @@ document.querySelectorAll('.exp-item, .proj-card, .edu-card, .contact-card, .pub
         { h: '  <span class="t-ok">✓ live at</span> <span class="t-str">yugenlabs.dev</span>', delay: 800 },
       ]
     },
+    {
+      cmd: [{ t: 'ls ', c: 'cmd' }, { t: '-la ', c: 'flag' }, { t: '/secret', c: 'arg' }],
+      steps: [
+        { h: '<span class="t-dim">drwxr-xr-x</span>  <span class="t-str">david</span>  <span class="t-arg">.hidden/</span>' },
+        { type: 'subcmd', parts: [{ t: 'cat ', c: 'cmd' }, { t: '.hidden/README', c: 'arg' }], delay: 520 },
+        { h: '  <span class="t-str">"not all the answers are in the code..."</span>' },
+        { type: 'subcmd', parts: [{ t: 'find ', c: 'cmd' }, { t: '. ', c: 'arg' }, { t: '-name ', c: 'flag' }, { t: '"*.exe" ', c: 'str' }, { t: '2>/dev/null', c: 'dim' }], delay: 480 },
+        { h: '  <span class="t-arg">./office.exe</span>' },
+      ]
+    },
   ];
 
   var root = document.getElementById('termLines');
@@ -206,6 +216,9 @@ document.querySelectorAll('.exp-item, .proj-card, .edu-card, .contact-card, .pub
     for (var step of seq.steps) {
       if (step.type === 'progress') {
         await animateProgress();
+      } else if (step.type === 'subcmd') {
+        await sleep(step.delay || 400);
+        await typeCmd(step.parts);
       } else {
         await sleep(step.delay || 90);
         addLine(step.h);
