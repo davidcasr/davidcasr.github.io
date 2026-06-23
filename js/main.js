@@ -168,7 +168,7 @@ document.querySelectorAll('.exp-item, .proj-card, .edu-card, .contact-card, .pub
     d.className = 'term-line';
     d.innerHTML = h;
     root.appendChild(d);
-    while (root.children.length > 30) root.removeChild(root.firstChild);
+    while (root.children.length > 11) root.removeChild(root.firstChild);
   }
 
   async function typeCmd(parts) {
@@ -179,7 +179,7 @@ document.querySelectorAll('.exp-item, .proj-card, .edu-card, .contact-card, .pub
     ps.textContent = '$ ';
     line.appendChild(ps);
     root.appendChild(line);
-    while (root.children.length > 30) root.removeChild(root.firstChild);
+    while (root.children.length > 11) root.removeChild(root.firstChild);
 
     for (var p of parts) {
       var s = document.createElement('span');
