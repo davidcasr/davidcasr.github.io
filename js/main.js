@@ -250,6 +250,7 @@ document.querySelectorAll('.exp-item, .proj-card, .edu-card, .contact-card, .pub
       cur.className = 'term-line';
       cur.innerHTML = '<span class="t-prompt">$ </span><span class="term-cursor"></span>';
       root.appendChild(cur);
+      trimLines();
       await sleep(1300 + Math.random() * 1000);
       cur.remove();
     }
