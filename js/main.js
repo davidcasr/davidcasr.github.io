@@ -151,6 +151,22 @@ document.querySelectorAll('.exp-item, .proj-card, .edu-card, .contact-card, .pub
   var root = document.getElementById('termLines');
   if (!root) return;
 
+  var termBody = document.querySelector('.term-body');
+  var LINE_H = 17.5; // .term-line: 10px font-size * 1.75 line-height
+
+  function computeMaxLines() {
+    if (!termBody) return 11;
+    var available = termBody.clientHeight - 16; // term-lines sits 16px above the body's bottom edge
+    return Math.max(4, Math.min(11, Math.floor(available / LINE_H)));
+  }
+
+  var maxLines = computeMaxLines();
+  window.addEventListener('resize', function () { maxLines = computeMaxLines(); }, { passive: true });
+
+  function trimLines() {
+    while (root.children.length > maxLines) root.removeChild(root.firstChild);
+  }
+
   var hist = [];
 
   function pickNext() {
@@ -168,7 +184,7 @@ document.querySelectorAll('.exp-item, .proj-card, .edu-card, .contact-card, .pub
     d.className = 'term-line';
     d.innerHTML = h;
     root.appendChild(d);
-    while (root.children.length > 11) root.removeChild(root.firstChild);
+    trimLines();
   }
 
   async function typeCmd(parts) {
@@ -179,7 +195,7 @@ document.querySelectorAll('.exp-item, .proj-card, .edu-card, .contact-card, .pub
     ps.textContent = '$ ';
     line.appendChild(ps);
     root.appendChild(line);
-    while (root.children.length > 11) root.removeChild(root.firstChild);
+    trimLines();
 
     for (var p of parts) {
       var s = document.createElement('span');
