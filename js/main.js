@@ -157,7 +157,7 @@ document.querySelectorAll('.exp-item, .proj-card, .edu-card, .contact-card, .pub
   function computeMaxLines() {
     if (!termBody) return 11;
     var available = termBody.clientHeight - 16; // term-lines sits 16px above the body's bottom edge
-    return Math.max(4, Math.min(11, Math.floor(available / LINE_H)));
+    return Math.max(4, Math.floor(available / LINE_H)); // no upper cap: fill whatever height the container has
   }
 
   var maxLines = computeMaxLines();
@@ -215,6 +215,7 @@ document.querySelectorAll('.exp-item, .proj-card, .edu-card, .contact-card, .pub
     var s = document.createElement('span');
     line.appendChild(s);
     root.appendChild(line);
+    trimLines();
     var N = 20;
     for (var i = 0; i <= N; i++) {
       var pct = Math.round(i / N * 100);
